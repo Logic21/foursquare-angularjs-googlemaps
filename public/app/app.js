@@ -56,7 +56,6 @@ define([
       }])
       .run(['$http', '$rootScope', 'initService', 'Analytics',
         function ($http, $rootScope, initService, Analytics) {
-          document.getElementById('page-is-loading').remove();
           initService.launch();
         }
       ]);
