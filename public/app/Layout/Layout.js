@@ -3,11 +3,10 @@
 define([
   'app',
   './config/resource',
-  './controllers/static',
+  './controllers/map',
   './services/initializer',
   './services/fourSquare',
 ], function (app) {
-
   app.run([
     '$http',
     '$window',
@@ -29,5 +28,4 @@ define([
       });
     },
   ]);
-
 });

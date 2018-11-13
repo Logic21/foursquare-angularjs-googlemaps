@@ -6,8 +6,8 @@ define(['app'], function (app) {
     '$stateProvider', function ($stateProvider) {
       $stateProvider.state('about', {
         url: '/',
-        templateUrl: '/app/Layout/views/page/static.html',
-        controller: 'StaticCtrl',
+        templateUrl: '/app/Layout/views/map.html',
+        controller: 'MapCtrl',
       });
     }]);
 

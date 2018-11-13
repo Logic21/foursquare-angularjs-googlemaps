@@ -2,7 +2,7 @@
 
 define(['app'], function (app) {
   app.controller(
-    'StaticCtrl', [
+    'MapCtrl', [
       'NgMap',
       '$location',
       '$scope',
