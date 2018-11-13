@@ -16,6 +16,7 @@ define(
     'angular-moment',
     'ngMaterial',
     'ngTagsInput',
+    'ngMap',
   ],
   function (angular) {
 
@@ -31,6 +32,7 @@ define(
       'ngAnimate',
       'angularMoment',
       'ngTagsInput',
+      'ngMap',
     ]);
 
     app

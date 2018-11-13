@@ -2,18 +2,12 @@
     <div class="actions">
 
         <div class="page-header">
-            FourSquare
+            FoursSquare
         </div>
-        Change a location and get fresh results to appear
-        <br/>
-        <br/>
 
         <md-content class="venues-collection">
             <md-list flex>
-                <md-subheader class="md-no-sticky">3 line item (with hover)</md-subheader>
                 <md-list-item class="md-3-line" ng-repeat="item in venues" ng-click="null">
-                    <img ng-src="{{item.categories[0].icon.prefix}}{{item.categories[0].icon.suffix}}"
-                         class="md-avatar" alt="{{item.who}}"/>
                     <div class="md-list-item-text" layout="column">
                         <h3>{{ item.name }}</h3>
                         <h4>{{ item.location.formattedAddress[0] }}</h4>
@@ -23,8 +17,9 @@
             </md-list>
         </md-content>
 
-        <!--{{ venues }}-->
-
     </div>
-    <div ng-include="'/app/Layout/views/page/banner.html'"></div>
+
+    <div class="banner">
+        <ng-map center="[40.74, -74.18]"></ng-map>
+    </div>
 </div>

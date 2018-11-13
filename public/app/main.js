@@ -5,7 +5,6 @@ require.config({
     'jQuery': '../bower_components/jquery/jquery.min',
     'underscore': '../bower_components/underscore/underscore-min',
     'domReady': '../bower_components/domReady/domReady',
-    'medium-editor': '../bower_components/medium-editor/dist/js/medium-editor.min',
     'angular': '../bower_components/angular/angular.min',
     'angular-resource': '../bower_components/angular-resource/angular-resource.min',
     'angular-cookies': '../bower_components/angular-cookies/angular-cookies.min',
@@ -19,6 +18,7 @@ require.config({
     'ngAnimate': '../bower_components/angular-animate/angular-animate.min',
     'ngMessages': '../bower_components/angular-messages/angular-messages.min',
     'ngMaterial': '../bower_components/angular-material/angular-material.min',
+    'ngMap': '../bower_components/ngmap/build/scripts/ng-map',
   },
   shim: {
     'jQuery': {
@@ -28,7 +28,7 @@ require.config({
       'exports': 'angular',
       deps: ['jQuery'],
     },
-    'medium-editor': ['angular'],
+    'ngMap': ['angular'],
     'ngAria': ['angular'],
     'ngAnimate': ['angular'],
     'ngMessages': ['angular'],
