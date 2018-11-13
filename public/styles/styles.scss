@@ -1,18 +1,10 @@
 //Layout
 @import "../app/Layout/style/font/roboto";
-@import "../app/Layout/style/font/icomoon";
-@import "../app/Layout/style/mixins";
 @import "../app/Layout/style/buttons";
 @import "../app/Layout/style/reset";
 @import "../app/Layout/style/forms";
 @import "../app/Layout/style/main";
-@import "../app/Layout/style/header";
-@import "../app/Layout/style/sidenav";
-@import "../app/Layout/style/quicksearch";
 @import "../app/Layout/style/pages";
-@import "../app/Layout/style/modal";
-@import "../app/Layout/style/sidebar";
-
 //Vendors
 @import "../bower_components/angular-material/modules/scss/angular-material";
 @import "../bower_components/angular-loading-bar/build/loading-bar.css";

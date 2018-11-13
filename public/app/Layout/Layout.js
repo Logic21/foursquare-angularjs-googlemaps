@@ -3,11 +3,8 @@
 define([
   'app',
   './config/resource',
-
   './controllers/static',
-
   './services/init',
-
 ], function (app) {
 
   app.run([
@@ -25,15 +22,7 @@ define([
         $rootScope.appState = toState.name
 
         $(window).scroll(function () {
-          var sidebar = $('.sidebar')
-          var scroll = $(window).scrollTop()
-
-          if (scroll >= 80) {
-            sidebar.addClass('--fixed')
-          } else {
-            sidebar.removeClass('--fixed')
-          }
-
+          // JQuery goes here ...
         })
 
       })

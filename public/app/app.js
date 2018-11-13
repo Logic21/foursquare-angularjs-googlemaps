@@ -36,7 +36,6 @@ define([
       'ngAnimate',
       'angular-loading-bar',
       'angularMoment',
-      'LoopbackServices',
       'infinite-scroll',
       'ngFileUpload',
       'ngTagsInput',
