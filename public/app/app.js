@@ -6,32 +6,16 @@ define(
     'jQuery',
     'underscore',
     'angular-resource',
-    'angular-cookies',
-    'angular-sanitize',
-    'ui-validate',
     'angular-ui-router',
-    'ngMessages',
-    'ngAria',
-    'ngAnimate',
-    'angular-moment',
     'ngMaterial',
-    'ngTagsInput',
     'ngMap',
   ],
   function (angular) {
 
     var app = angular.module('app', [
       'ngMaterial',
-      'ngCookies',
       'ngResource',
-      'ngSanitize',
       'ui.router',
-      'ui.validate',
-      'ngMessages',
-      'ngAria',
-      'ngAnimate',
-      'angularMoment',
-      'ngTagsInput',
       'ngMap',
     ]);
 

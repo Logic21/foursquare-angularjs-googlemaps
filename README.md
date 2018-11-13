@@ -16,6 +16,6 @@ $ bower install
 $ node server.js
 
 # visit the browser
-$ http://localhost:3000
+$ http://0.0.0.0:3000
 ```
 
