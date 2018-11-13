@@ -9,16 +9,19 @@
 ## Install and Run the project
 
 ```bash
-# install the npm
+# A. install the npm
 $ npm install
 
-# install the bower
+# B. install the bower
 $ bower install
 
-# run the project
+# C. transpile sass
+$ gulp frontend:sass
+
+# D. run the project
 $ node server.js
 
-# visit the browser
+# E. visit the browser
 $ http://0.0.0.0:3000
 ```
 
