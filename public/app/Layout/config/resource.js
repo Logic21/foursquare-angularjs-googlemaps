@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 define(['app'], function (app) {
 
@@ -8,7 +8,7 @@ define(['app'], function (app) {
         url: '/',
         templateUrl: '/app/Layout/views/page/static.html',
         controller: 'StaticCtrl',
-      })
-    }])
+      });
+    }]);
 
-})
+});

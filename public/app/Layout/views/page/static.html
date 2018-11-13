@@ -2,61 +2,28 @@
     <div class="actions">
 
         <div class="page-header">
-            About
+            FourSquare
         </div>
-
-        Our mission is to keep you informed about latest industry news.
+        Change a location and get fresh results to appear
         <br/>
         <br/>
 
-        We respect national and international law and we do not welcome if you violate someone's intellectual
-        property or encourage hate speech. If you are a victim of such behavior, please let us know and we will
-        resolve your issue within reasonable time.
-        <br/>
-        <br/>
+        <md-content class="venues-collection">
+            <md-list flex>
+                <md-subheader class="md-no-sticky">3 line item (with hover)</md-subheader>
+                <md-list-item class="md-3-line" ng-repeat="item in venues" ng-click="null">
+                    <img ng-src="{{item.categories[0].icon.prefix}}{{item.categories[0].icon.suffix}}"
+                         class="md-avatar" alt="{{item.who}}"/>
+                    <div class="md-list-item-text" layout="column">
+                        <h3>{{ item.name }}</h3>
+                        <h4>{{ item.location.formattedAddress[0] }}</h4>
+                        <p>{{ item.notes }}</p>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </md-content>
 
-        <div class="page-header">
-            Contact Us
-        </div>
-        <form name="form" role="form" class="form-centered" ng-submit="submitContact(form)">
-
-            <md-input-container class="md-block">
-                <label>Email</label>
-                <input ng-model="email"
-                       required="true"
-                       type="email"
-                       name="email">
-            </md-input-container>
-
-            <md-input-container class="md-block">
-                <label>Name</label>
-                <input ng-model="name"
-                       required="true"
-                       name="name">
-            </md-input-container>
-
-            <md-input-container class="md-block">
-                <label>Phone</label>
-                <input ng-model="phone"
-                       required="true"
-                       name="name">
-            </md-input-container>
-
-            <md-input-container class="md-block">
-                <label>Message</label>
-                <textarea ng-model="message"
-                          required="true"
-                          rows="4"
-                          name="message"/>
-            </md-input-container>
-
-            <div class="pull-right">
-                <md-button type="submit" class="md-default md-raised">
-                    Send Message
-                </md-button>
-            </div>
-        </form>
-
+        <!--{{ venues }}-->
 
     </div>
     <div ng-include="'/app/Layout/views/page/banner.html'"></div>

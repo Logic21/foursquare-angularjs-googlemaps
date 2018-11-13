@@ -1,6 +1,7 @@
-'use strict'
+'use strict';
 
-define([
+define(
+  [
     'angular',
     'jQuery',
     'underscore',
@@ -30,20 +31,23 @@ define([
       'ngAnimate',
       'angularMoment',
       'ngTagsInput',
-    ])
+    ]);
 
-    app.config(function ($provide, $locationProvider, $httpProvider) {
-      $httpProvider.defaults.withCredentials = true
-      $locationProvider.html5Mode(true)
-    }).config([
-      '$qProvider', function ($qProvider) {
-        $qProvider.errorOnUnhandledRejections(false)
-      }]).run([
-      '$http', '$rootScope', 'initService',
-      function ($http, $rootScope, initService) {
-        initService.launch()
-      },
-    ])
+    app
+      .config(function ($provide, $locationProvider, $httpProvider) {
+        $locationProvider.html5Mode(true);
+      })
+      .config([
+        '$qProvider', function ($qProvider) {
+          $qProvider.errorOnUnhandledRejections(false);
+        }])
+      .run([
+        '$http', '$rootScope', 'initializer',
+        function ($http, $rootScope, initializer) {
+          initializer.launch();
+        },
+      ]);
 
-    return app
-  })
+    return app;
+  },
+);

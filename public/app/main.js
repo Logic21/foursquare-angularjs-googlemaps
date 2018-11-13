@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 require.config({
   paths: {
@@ -57,4 +57,4 @@ require.config({
     'angular',
   ],
   waitSeconds: 0,
-})
+});

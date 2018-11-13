@@ -6,10 +6,10 @@
 
       .landing-page {
         .actions {
-          margin-top: 50px;
+          margin-top: 0;
           width: 30%;
           float: right;
-          padding: 20px 35px;
+          padding: 20px 25px;
         }
         .banner {
           width: 70%;
@@ -37,16 +37,6 @@
       .actions {
         width: 100% !important;
         margin-top: 20px !important;
-        .show-password {
-          display: none;
-        }
-        .form-centered {
-          width: 100%;
-          max-width: 100%;
-        }
-        .note {
-          display: none;
-        }
       }
       .banner {
         display: none;

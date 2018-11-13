@@ -1,10 +1,11 @@
-'use strict'
+'use strict';
 
 define([
   'app',
   './config/resource',
   './controllers/static',
-  './services/init',
+  './services/initializer',
+  './services/fourSquare',
 ], function (app) {
 
   app.run([
@@ -19,14 +20,14 @@ define([
       $rootScope,
     ) {
       $rootScope.$on('$stateChangeStart', function (event, toState) {
-        $rootScope.appState = toState.name
+        $rootScope.appState = toState.name;
 
         $(window).scroll(function () {
           // JQuery goes here ...
-        })
+        });
 
-      })
+      });
     },
-  ])
+  ]);
 
-})
+});
