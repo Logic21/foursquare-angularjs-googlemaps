@@ -14,8 +14,14 @@ define(['app'], function (app) {
         fourSquare,
       ) {
 
-        NgMap.getMap().then(function (map) {
-        });
+        $scope.centerMap = function (venue) {
+          NgMap.getMap().then(function (map) {
+            console.log(venue);
+            map.setCenter(
+              {lat: venue.location.lat, lng: venue.location.lng},
+            );
+          });
+        };
 
         $scope.venues = [];
         fourSquare

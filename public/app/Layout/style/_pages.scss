@@ -8,23 +8,15 @@
         .actions {
           margin-top: 0;
           width: 30%;
-          float: right;
+          float: left;
           padding: 20px 25px;
         }
         .banner {
           width: 70%;
-          float: left;
+          float: right;
           background: #444;
           height: 100%;
           position: relative;
-          &:before {
-            position: absolute;
-            content: "";
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-          }
         }
       }
     }
