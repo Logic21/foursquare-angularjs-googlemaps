@@ -1,3 +1,6 @@
+![foursquare angularjs googlemaps demo](https://raw.githubusercontent.com/ivanproskuryakov/foursquare-angularjs-googlemaps/master/readme/demo.png)
+
+
 ### Gulp
     $ npm install gulp-cli -g
 ### Bower
