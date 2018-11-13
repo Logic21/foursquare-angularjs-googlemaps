@@ -7,11 +7,11 @@
 
         <md-content class="venues-collection">
             <md-list flex>
-                <md-list-item class="md-3-line" ng-repeat="item in venues" ng-click="null">
+                <md-list-item class="md-3-line" ng-repeat="v in venues" ng-click="null">
                     <div class="md-list-item-text" layout="column">
-                        <h3>{{ item.name }}</h3>
-                        <h4>{{ item.location.formattedAddress[0] }}</h4>
-                        <p>{{ item.notes }}</p>
+                        <h3>{{ v.name }}</h3>
+                        <h4>{{ v.location.formattedAddress[0] }}</h4>
+                        <p>{{ v.categories[0].name }}</p>
                     </div>
                 </md-list-item>
             </md-list>
@@ -20,6 +20,16 @@
     </div>
 
     <div class="banner">
-        <ng-map center="[40.74, -74.18]"></ng-map>
+        <ng-map
+                zoom="14"
+                center="[{{ venues[0].location.lat }},{{ venues[0].location.lng }}]"
+        >
+            <marker
+                    ng-repeat="v in venues track by $index"
+                    id="custom-marker-{{$index}}"
+                    position="{{[v.location.lat,v.location.lng]}}">
+            </marker>
+
+        </ng-map>
     </div>
 </div>

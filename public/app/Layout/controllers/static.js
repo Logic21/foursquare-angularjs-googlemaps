@@ -19,7 +19,7 @@ define(['app'], function (app) {
 
         $scope.venues = [];
         fourSquare
-          .search('Chicago,IL')
+          .search('San Diego,CA')
           .then(function (response) {
             $scope.venues = response.data.response.venues;
             console.log($scope.venues);
