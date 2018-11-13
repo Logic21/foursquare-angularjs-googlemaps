@@ -1,12 +1,5 @@
 #app {
-  &.exception,
-  &.about,
-  &.userInformation,
-  &.userPasswordForgot,
-  &.userPasswordReset,
-  &.userRegister,
-  &.userLogin {
-
+  &.about {
     .content-wrapper {
       max-width: 100%;
       padding: 0;
@@ -15,19 +8,12 @@
         .actions {
           margin-top: 50px;
           width: 30%;
-          float: left;
+          float: right;
           padding: 20px 35px;
-
-          .show-password {
-            float: left;
-            button {
-              margin: 0;
-            }
-          }
         }
         .banner {
           width: 70%;
-          float: right;
+          float: left;
           background: #444;
           height: 100%;
           position: relative;
@@ -41,37 +27,6 @@
           }
         }
       }
-    }
-  }
-}
-
-.intro-text {
-  text-align: center;
-  margin-bottom: 50px;
-  color: #777;
-}
-
-.or-separator {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  span {
-    background: #f5f5f5;
-    color: #aaa;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    line-height: 28px;
-    font-weight: 400;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 14px;
-  }
-
-  &.--inverted {
-    span {
-      color: #888;
-      background: #333;
     }
   }
 }

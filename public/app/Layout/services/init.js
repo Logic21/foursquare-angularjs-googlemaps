@@ -7,6 +7,7 @@ define(['app'], function (app) {
         launch: function () {
 
           console.log('----------- App Loaded! -----------')
+
         },
       }
     },
